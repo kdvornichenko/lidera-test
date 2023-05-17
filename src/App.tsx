@@ -1,5 +1,15 @@
+import Header from './components/Header/Header'
+import MainScreen from './components/MainScreen'
+
 function App() {
-	return <div className="container text-6.5 font-bold text-white"></div>
+	return (
+		<div className="text-white">
+			<Header />
+			<main>
+				<MainScreen />
+			</main>
+		</div>
+	)
 }
 
 export default App

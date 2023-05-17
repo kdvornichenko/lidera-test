@@ -7,4 +7,15 @@
 		@apply font-sans;
 		font-family: 'Arial', sans-serif;
 	}
+
+	body,
+	html {
+		@apply overflow-x-hidden;
+	}
+}
+
+@layer components {
+	.label {
+		@apply rounded-3xl bg-blue py-3 text-center text-base transition-colors hover:bg-yellow-300 2sx:text-xl;
+	}
 }

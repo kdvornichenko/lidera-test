@@ -2,16 +2,12 @@
 import colors from 'tailwindcss/colors'
 import plugin from 'tailwindcss/plugin'
 
-const primary = '#333'
-const secondary = '#888'
+const shadow = '0px 4px 4px rgba(0, 0, 0, 0.25)'
 
 export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		colors: {
-			primary,
-			secondary,
-			black: colors.black,
 			neutral: colors.neutral,
 			transparent: colors.transparent,
 			white: colors.white,
@@ -24,23 +20,42 @@ export default {
 				'blue-section-gradient':
 					'linear-gradient(230deg, #204a72 0%, #031432 100%)',
 			},
+			boxShadow: {
+				main: shadow,
+			},
 			colors: {
+				black: '#191919',
+				blue: '#1573ff',
+				header: '#120127',
 				main: '#1E0044',
-				yellow: '#FFD262',
-				gray: '#f4f4f4',
-				blue: '#0B3054',
+				yellow: {
+					100: '#FFD262',
+					200: '#FDC949',
+					300: '#F7BA4B',
+				},
+			},
+			dropShadow: {
+				main: shadow,
 			},
 			fontSize: {
 				10: '0.625rem',
 				11: '0.6875rem',
-				6.5: '4.0625rem',
+				'1.5xl': '1.375rem',
+				'3.5xl': '2.0625rem',
+				'6.5xl': '4.0625rem',
 			},
 			maxWidth: {
 				main: '90rem',
+				header: '79.625rem',
+				'0.5xs': '16.25rem',
 			},
-
+			borderRadius: {
+				'2lg': '10px',
+				'4xl': '30px',
+			},
 			screens: {
 				sx: '425px',
+				'2sx': '460px',
 				'2md': '900px',
 			},
 			spacing: {
