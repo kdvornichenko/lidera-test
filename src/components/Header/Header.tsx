@@ -1,5 +1,4 @@
 import { Squeeze as Hamburger } from 'hamburger-react'
-import { MdMenu } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 
 import logo from '@/assets/logo.svg'
