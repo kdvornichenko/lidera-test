@@ -1,4 +1,3 @@
-
 import cupImg from '@/assets/cup.png'
 import roubleIcon from '@/assets/icons/rouble.png'
 import starIcon from '@/assets/icons/star.svg'
@@ -18,9 +17,9 @@ const MainScreen = () => {
 				</div>
 				<div className="mt-16 flex max-w-sm flex-col gap-8 lg:flex-center lg:max-w-none lg:flex-row xl:gap-28">
 					<div className="flex h-max max-w-sm flex-wrap gap-2">
-						<div className="label flex-1">май-август 2023 г.</div>
-						<div className="label w-1/3 2sx:w-44">г. Хабаровск</div>
-						<div className="label w-full">для школьников 8-18 лет</div>
+						<div className="label-blue flex-1">май-август 2023 г.</div>
+						<div className="label-blue w-1/3 2sx:w-44">г. Хабаровск</div>
+						<div className="label-blue w-full">для школьников 8-18 лет</div>
 					</div>
 					<div className="text-2xl font-bold leading-[30px] sm:text-3.5xl lg:max-w-xs xl:max-w-sm">
 						Прокачай свои знания по финансовой грамотности

@@ -12,10 +12,28 @@
 	html {
 		@apply overflow-x-hidden;
 	}
+
+	h2 {
+		@apply text-center text-4xl font-bold md:text-5xl lg:text-6xl xl:text-[78px];
+	}
+
+	h4 {
+		@apply text-xl font-bold leading-9 md:text-2xl lg:text-3xl xl:text-[32px];
+	}
 }
 
 @layer components {
-	.label {
-		@apply rounded-3xl bg-blue py-3 text-center text-base transition-colors hover:bg-yellow-300 2sx:text-xl;
+	.label-blue {
+		@apply rounded-3xl bg-blue py-3 text-center text-base 2sx:text-xl;
+	}
+	.label-transparent {
+		@apply w-max rounded-4xl border border-white bg-transparent px-7 py-3 text-lg;
+	}
+
+	.about {
+		@apply flex flex-col justify-between;
+		&__text {
+			@apply mt-[22px] max-w-[540px] text-lg font-bold sm:text-xl xl:text-[22px];
+		}
 	}
 }

@@ -3,14 +3,14 @@ import { INavigationItem } from 'models/models'
 export const navigationData: INavigationItem[] = [
 	{
 		title: 'о чемпионате',
-		href: '#',
+		href: '#about',
 	},
 	{
 		title: 'новости',
-		href: '#',
+		href: '#news',
 	},
 	{
 		title: 'контакты',
-		href: '#',
+		href: '#contacts',
 	},
 ]

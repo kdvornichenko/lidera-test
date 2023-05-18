@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import { navigationData } from '@/data/navigation.data'
 
@@ -11,7 +11,9 @@ const Navigation = () => {
 						className="transition-colors hover:text-yellow-100"
 						key={item.title}
 					>
-						<Link to={item.href}>{item.title}</Link>
+						<AnchorLink offset={100} href={item.href}>
+							{item.title}
+						</AnchorLink>
 					</li>
 				))}
 			</ul>
